@@ -5,7 +5,7 @@ namespace APIAndJWT.Domain.Responses
     public class ProductResponse : BaseResponse
     {
         public Product Product { get; set; }
-        public ProductResponse(bool success, string message,Product product) : base(success, message)
+        private ProductResponse(bool success, string message,Product product) : base(success, message)
         {
             this.Product = product;
         }
